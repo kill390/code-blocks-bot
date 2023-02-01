@@ -12,4 +12,5 @@ steps:
 - script: |
     python3 -m pip install -U discord.py
     python3 bot.py
-  displayName: 'Run a multi-line script'
+    workingDirectory: $(projectRoot)
+    displayName: 'Run a multi-line script'
