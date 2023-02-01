@@ -10,14 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
   displayName: 'Run a one-line script'
 
 - script: |
     python -m venv antenv
     source antenv/bin/activate
     python -m pip install --upgrade pip
-    pip install setup
-    pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+    python3 -m pip install -U discord.py
     python3 bot.py
   displayName: 'Run a multi-line script'
