@@ -10,9 +10,6 @@ steps:
          displayName: 'Use Python $(pythonVersion)'
 
 - script: |
-    python -m venv antenv
-    source antenv/bin/activate
-    python -m pip install --upgrade pip
     python3 -m pip install -U discord.py
     python3 bot.py
   displayName: 'Run a multi-line script'
