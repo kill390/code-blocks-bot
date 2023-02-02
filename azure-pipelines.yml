@@ -2,5 +2,5 @@ steps:
 - task: PythonScript@0
   inputs:
     scriptSource: 'filePath'
-    scriptPath: '/bot.py'
+    scriptPath: 'code-blocks-bot/bot.py'
 
