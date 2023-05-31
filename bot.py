@@ -34,4 +34,4 @@ async def on_message(message):
         new = message.content.split("/code ")
         await message.channel.send("```" + new[1] + "```")
 
-client.run('MTA3MDM1ODQ2Nzc5MTAzNjQ3Nw.GIm2ls.yyV1ZzgNUIp1qzcvMfLjTyOwy6f9rSLqKXGNsw')
+client.run('Secret Key')
